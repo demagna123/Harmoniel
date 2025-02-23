@@ -9,7 +9,7 @@ let timeDom = document.querySelector(".carousel .time");
 
 thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
 
-let timeRunning = 3000; // Durée de l'animation
+let timeRunning = 3000;
 let timeAutoNext = 7000; // Délai avant le défilement automatique
 
 let runTimeOut;
@@ -59,8 +59,8 @@ prevDom.onclick = function () {
   showSlider("prev");
 };
 
+
 //NOS PRODUITS CAROUSSEL
-// Deuxième carrousel (Nos Produits)
 document.addEventListener("DOMContentLoaded", function () {
   const carousel = document.querySelector(".product-carousel");
   const prevButton = document.getElementById("prev-product");

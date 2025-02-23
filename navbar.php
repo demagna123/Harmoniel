@@ -1,23 +1,20 @@
-
-
 <header>
     <nav>
        <div class="container">
-       <div class="logo">
-          <img src="./image/logo (2).png" alt="" width="500px" height="500px" />
-       <div class="phrase-logo">
-       <p> <span>H</span>armoniel </p>
+           <div class="logo">
+              <img src="./image/logo (2).png" alt="Logo Harmoniel" />
+              <div class="phrase-logo">
+                 <p><span>H</span>armoniel</p>
+              </div>
+           </div>
+           <ul class="menu">
+              <li><a href="index.php" class="nav-link">Accueil</a></li>
+              <li><a href="index.php#produits" class="nav-link">Nos produits</a></li>
+              <li><a href="index.php#education" class="nav-link">Éducation & Sensibilisation</a></li>
+              <li><a href="index.php#apropos" class="nav-link">À propos</a></li>
+              <li><a href="index.php#temoignage" class="nav-link">Témoignages</a></li>
+              <li><a href="index.php#contact" class="nav-link">Contact</a></li>
+           </ul>
        </div>
-
-        </div>
-        <ul class="menu">
-          <li><a href="#products">Nos produits</a></li>
-          <li><a href="#education">Éducation & Sensibilisation</a></li>
-          <li><a href="#about">À propos</a></li>
-          <li><a href="#testimonials">Témoignages</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-       </div>
-      </nav>
-   
-    </header>
+    </nav>
+</header>

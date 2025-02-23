@@ -12,7 +12,7 @@
   <?php include 'navbar.php'; ?>
 
   <!-- Carousel -->
-  <div class="carousel">
+  <div class="carousel" id="acceuil">
     <!-- List item -->
     <div class="list">
       <div class="item">
@@ -158,7 +158,7 @@
   </div>
 
   <!-- Section Nos Produits -->
-  <section class="nos-produits">
+  <section class="nos-produits" id="produits">
     <h2>Nos Produits</h2>
     <p>Découvrez notre gamme de produits de qualité et confortables.</p>
     <div class="carousel-container">
@@ -194,7 +194,7 @@
   </section>
 
   <!-- Section Éducation et Sensibilisation -->
-  <section class="education">
+  <section class="education" id="education">
     <div class="container">
       <h2>Éducation et Sensibilisation</h2>
       <p>
@@ -206,7 +206,7 @@
   </section>
 
   <!-- Section À Propos -->
-  <section class="about-us">
+  <section class="about-us" id="apropos">
     <div class="about">
       <div class="inner-section">
         <h1>À Propos de Nous</h1>
