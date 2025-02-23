@@ -8,7 +8,7 @@
               </div>
            </div>
            <ul class="menu">
-              <li><a href="index.php" class="nav-link">Accueil</a></li>
+              <li><a href="index.php#acceuil" class="nav-link">Accueil</a></li>
               <li><a href="index.php#produits" class="nav-link">Nos produits</a></li>
               <li><a href="index.php#education" class="nav-link">Éducation & Sensibilisation</a></li>
               <li><a href="index.php#apropos" class="nav-link">À propos</a></li>

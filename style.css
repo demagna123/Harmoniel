@@ -38,8 +38,9 @@ nav {
 
 .logo {
   display: flex;
+  flex-direction: column; /* Alignement vertical */
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem; /* Espace réduit entre l'image et le texte */
 }
 
 .logo img {
@@ -62,6 +63,14 @@ nav {
 
 .logo p span {
   font-size: 1.2em;
+}
+
+/* Style pour l'item "Accueil" actif */
+.menu li a[href="index.php#acceuil"] {
+  font-weight: 900;
+  /* text-decoration: underline; */
+  color: #f1683a;
+  font-size: 1.5em;
 }
 
 .menu {
@@ -89,10 +98,8 @@ nav {
 }
 
 .menu a:hover {
-  color: #f1683a; 
+  color: #f1683a;
 }
-
-
 
 /* Responsive */
 @media screen and (max-width: 768px) {
@@ -427,7 +434,7 @@ nav {
 
 .carousel-container {
   position: relative;
-  max-width: 1200px;
+  max-width: 70%;
   margin: auto;
   overflow: hidden;
 }
@@ -474,7 +481,7 @@ nav {
 
 .carousel-arrow {
   position: absolute;
-  top: 50%;
+  top: 35%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
