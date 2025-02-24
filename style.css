@@ -589,7 +589,7 @@ nav {
 }
 
 .about {
-  background: url("./image/bg3.jpg") no-repeat left;
+  background: url("./image/propos.jpg") no-repeat left;
   backdrop-filter: blur(10px);
 
   background-size: 55%;
@@ -632,7 +632,7 @@ nav {
 }
 
 .skills button {
-  font-size: 0.7em;
+  font-size: 1em;
   text-align: center;
   letter-spacing: 1px;
   border: 1px solid #000;
@@ -642,6 +642,9 @@ nav {
   color: #000;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease; /* Transition fluide */
+}
+.skills button a {
+  color: #000;
 }
 
 .skills button:hover {
@@ -951,5 +954,46 @@ nav {
 
   .social-links {
     justify-content: center;
+  }
+}
+.lire-plus {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+  color: #333;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lire-plus h2 {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+}
+
+/* Paragraphes */
+.lire-plus p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .lire-plus {
+    padding: 20px 15px;
+  }
+
+  .lire-plus h2 {
+    font-size: 1.8rem;
+  }
+
+  .lire-plus p {
+    font-size: 1rem;
   }
 }

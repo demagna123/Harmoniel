@@ -211,13 +211,15 @@
       <div class="inner-section">
         <h1>À Propos de Nous</h1>
         <p class="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Doloribus velit ducimus, enim inventore earum, eligendi
-          nostrum pariatur necessitatibus eius dicta a voluptates sit
-          deleniti autem error eos totam nisi neque voluptates sit deleniti autem error eos totam nisi neque.
+
+        Certaines expériences marquent une vie. La nôtre a commencé par une prise de conscience : l’impact des menstruations sur la santé des femmes et sur l’environnement.  
+
+Depuis toujours, les protections jetables nous étaient présentées comme la seule option. Ma sœur et moi les utilisions sans nous poser de questions, comme tant d’autres femmes. Mais ce que nous ignorions, c’est qu’au fil du temps, elles laissaient des traces invisibles sur nos corps. Des effets silencieux… jusqu’au jour où tout a basculé.  
+
+Il y a quelques années, la santé de ma sœur s’est soudainement dégradée. Après plusieurs consultations et examens, le verdict est tombé : une intervention chirurgicale était nécessaire. Ce fut un choc. Et le combat ne faisait que commencer...  <br>  
         </p>
         <div class="skills">
-          <button>Contactez-nous</button>
+          <button><a href="lire.html">Lire Plus</a></button>
         </div>
       </div>
     </div>
