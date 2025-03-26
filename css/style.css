@@ -5,16 +5,20 @@ body {
   /* padding-top: 80px; */
 }
 
-a {
-  text-decoration: none;
-}
+/* Navbar */
+/* Styles généraux */
+/* Style général */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Navbar */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Barre de navigation */
 nav {
   background: white;
   width: 100%;
@@ -37,17 +41,21 @@ nav {
 }
 
 /* Ajustement du logo */
-.logo img {
-  max-height: 60px;
-  width: auto;
-  display: block;
+.logo {
+  display: flex;
+  align-items: center;
 }
 
-/* Alignement du menu */
+.phrase-logo p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Menu Desktop */
 .menu {
   list-style: none;
   display: flex;
-  gap: 30px; /* Espacement entre les éléments du menu */
+  gap: 30px;
 }
 
 .menu li {
@@ -56,37 +64,64 @@ nav {
 
 .menu a {
   text-decoration: none;
-  color: #ffffff;
+  color: black;
   font-weight: 700;
-  transition: color 0.3s;
   padding: 10px 15px;
-  font-family: Poppins;
   font-size: 1.2em;
+  transition: color 0.3s;
 }
 
 .menu a:hover {
   color: #f1683a;
 }
 
-/* Éviter que la page soit cachée sous la navbar */
-body {
-  padding-top: 80px; /* Ajoute un espace sous la navbar */
+/* Icône du menu hamburger */
+/* Cacher le checkbox */
+.menu-toggle {
+  display: none;
+}
+
+/* Icône du menu hamburger */
+.hamburger {
+  display: none; /* Caché sur grand écran */
+  font-size: 30px;
+  cursor: pointer;
+  color: black;
 }
 
 /* Responsive */
 @media screen and (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    height: auto;
-    padding: 15px 20px;
+  .hamburger {
+    display: block; /* Affiché sur écran ≤ 768px */
   }
 
+  /* Cache le menu par défaut */
   .menu {
+    display: none;
     flex-direction: column;
-    gap: 10px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
     text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  /* Afficher le menu lorsque le checkbox est coché */
+  .menu-toggle:checked ~ .menu {
+    display: flex;
+  }
+
+  .menu li {
+    padding: 15px 0;
   }
 }
+
+
+
+ 
 
 /* carousel */
 .carousel {

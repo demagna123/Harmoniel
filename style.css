@@ -103,18 +103,29 @@ nav {
 
 /* Responsive */
 @media screen and (max-width: 768px) {
-  .container {
+  .menu {
+    display: none;
     flex-direction: column;
-    height: auto;
-    padding: 15px 20px;
+    position: absolute;
+    top: 70px;
+    right: 0; /* Place le menu à droite */
+    width: 250px; /* Ajuste la largeur selon ton design */
+    background: white;
+    text-align: left; /* Alignement du texte à gauche */
+    padding: 20px;
+    box-shadow: -4px 4px 6px rgba(0, 0, 0, 0.1);
   }
 
-  .menu {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
+  /* Afficher le menu lorsque le checkbox est coché */
+  .menu-toggle:checked ~ .menu {
+    display: flex;
+  }
+
+  .menu li {
+    padding: 15px;
   }
 }
+
 
 /* carousel */
 .carousel {
@@ -453,7 +464,7 @@ nav {
 
 .product-item img {
   max-width: 100%;
-  height: auto;
+  height: 400px;
   border-radius: 10px;
   backdrop-filter: blur(10px);
 }
@@ -500,18 +511,49 @@ nav {
   right: 10px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .product-item {
-    flex: 0 0 50%;
+/* Cacher le checkbox */
+.menu-toggle {
+  display: none;
+}
+
+/* Icône du menu hamburger */
+.hamburger {
+  display: none; /* Caché sur grand écran */
+  font-size: 30px;
+  cursor: pointer;
+  color: black;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block; /* Affiché sur écran ≤ 768px */
+  }
+
+  /* Cache le menu par défaut */
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  /* Afficher le menu lorsque le checkbox est coché */
+  .menu-toggle:checked ~ .menu {
+    display: flex;
+  }
+
+  .menu li {
+    padding: 15px 0;
   }
 }
 
-@media (max-width: 480px) {
-  .product-item {
-    flex: 0 0 100%;
-  }
-}
 /* EDUCATION ET SENSIBILISATION */
 /* EDUCATION ET SENSIBILISATION */
 .education {

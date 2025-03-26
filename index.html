@@ -6,30 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prostyle</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
   <!-- Header -->
   <header>
     <nav>
-      <div class="container">
-        <div class="logo">
-          <!-- <img src="./image/logo (2).png" alt="Logo BlousePro" /> -->
-          <div class="phrase-logo">
-            <p><span>P</span>rostyle</p>
-          </div>
+        <div class="container">
+            <div class="logo">
+                <img src="./image/logo.png" alt="Logo">
+                <!-- <div class="phrase-logo">
+                    <p><span>P</span>rostyle</p>
+                </div> -->
+            </div>
+
+            <!-- Checkbox cachée pour contrôler l'affichage du menu -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <i class="fa-solid fa-bars"></i> <!-- Icône Font Awesome -->
+            </label>
+
+            <ul class="menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="index.html#produits" class="nav-link">Nos produits</a></li>
+                <li><a href="index.html#apropos" class="nav-link">À propos</a></li>
+                <li><a href="index.html#temoignage" class="nav-link">Témoignages</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
         </div>
-        <ul class="menu">
-          <li><a href="index.html" class="nav-link">Accueil</a></li>
-          <li><a href="index.html#produits" class="nav-link">Nos produits</a></li>
-          <li><a href="index.html#apropos" class="nav-link">À propos</a></li>
-          <li><a href="index.html#temoignage" class="nav-link">Témoignages</a></li>
-          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
-        </ul>
-      </div>
     </nav>
-  </header>
+</header>
+
+
+
+
+
+
 
   <!-- Carousel -->
   <div class="carousel" id="acceuil">
@@ -197,6 +211,7 @@
             "Les blouses de Prostyle sont parfaites pour mes longues journées à l'hôpital. 
             Elles sont confortables et résistantes. Je recommande !"
           </p>
+
           <div class="rating">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -383,3 +398,4 @@
 </body>
 
 </html>
+

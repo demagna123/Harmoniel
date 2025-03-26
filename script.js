@@ -1,3 +1,5 @@
+
+console.log("JS chargé !");
 let nextDom = document.getElementById("next");
 let prevDom = document.getElementById("prev");
 
@@ -118,3 +120,26 @@ document.addEventListener("DOMContentLoaded", function () {
   // Mettre à jour le carrousel au chargement
   updateCarousel();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.querySelector(".hamburger");
+  const menu = document.querySelector(".menu");
+
+  if (hamburger && menu) {
+    hamburger.addEventListener("click", function () {
+      menu.classList.toggle("active");
+    });
+
+    // Fermer le menu si on clique en dehors
+    document.addEventListener("click", function (event) {
+      if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+        menu.classList.remove("active");
+      }
+    });
+  } else {
+    console.error("Hamburger ou menu non trouvé !");
+  }
+});
+
+
+
