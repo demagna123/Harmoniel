@@ -432,20 +432,21 @@ nav {
   background-color: #f9f9f9;
 }
 .nos-produits h2 {
-  font-size: 3em;
-  letter-spacing: 3px;
+  font-size: 4em;
+  /* letter-spacing: 3px; */
   margin-bottom: 50px;
-  font-family: Dancing script;
+  font-weight: 900;
+  /* font-family: Dancing script; */
 }
 .nos-produits p {
   margin-bottom: 40px;
   font-size: 1.5em;
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 .carousel-container {
   position: relative;
-  max-width: 70%;
+  max-width: 80%;
   margin: auto;
   overflow: hidden;
 }
@@ -461,6 +462,16 @@ nav {
   padding: 1rem;
   text-align: center;
 }
+.product-item h3 {
+
+  font-size: 2rem;
+
+}
+.product-item p {
+
+  font-size: 1rem;
+
+}
 
 .product-item img {
   max-width: 100%;
@@ -469,9 +480,30 @@ nav {
   backdrop-filter: blur(10px);
 }
 @media screen and (max-width: 678px) {
+  /* .product-item{
+    height: 280px;
+    width: 50%;
+    
+  }
+  .product-item h3 {
+
+    font-size: 0.7rem;
+  
+  }
+  .product-item p {
+
+    /* width: 200px; */
+    /* font-size: 0.5rem; */
+  
+    .carousel-container {
+      position: relative;
+      max-width: 100%;
+      margin: auto;
+      overflow: hidden;
+    }
   .product-item img {
     max-width: 100%;
-    height: 200px;
+    height: 150px;
     border-radius: 10px;
     backdrop-filter: blur(10px);
   }
@@ -562,75 +594,7 @@ nav {
   }
 }
 
-/* EDUCATION ET SENSIBILISATION */
-/* EDUCATION ET SENSIBILISATION */
-.education {
-  background: url("./image/back.jpg");
-  background-size: cover;
-  background-position: center;
-  min-height: 90vh;
-  text-align: center;
-  display: flex;
-  margin: 10% 0;
 
-  position: relative;
-}
-
-.education::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(5px);
-  z-index: 1;
-}
-
-.education .container {
-  /* background-color: rgba(255, 255, 255, 0.8);  */
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 50%;
-  z-index: 2;
-  margin-top: 10%;
-  position: relative;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.education h2 {
-  font-size: 3.5em;
-  margin-bottom: 15px;
-  color: #fff;
-  font-family: "Dancing Script";
-  margin-bottom: 40px;
-}
-
-.education p {
-  font-size: 1.2em;
-  color: #fff;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.btn-blog {
-  padding: 12px 25px;
-  background: transparent;
-  color: #fff;
-  font-size: 1.2em;
-  text-decoration: none;
-  border: 1px solid #fff;
-  border-radius: 15px;
-  transition: background 0.3s;
-}
-
-.btn-blog:hover {
-  background: #d9531e;
-  border-color: #d9531e;
-}
 /* A PROPOS */
 /* About Us Section */
 .about-us {
