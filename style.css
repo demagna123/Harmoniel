@@ -100,18 +100,43 @@ nav {
 .menu a:hover {
   color: #f1683a;
 }
+/* Cacher le checkbox */
+.menu-toggle {
+  display: none;
+}
+
+/* Icône du menu hamburger */
+.hamburger {
+  display: none; /* Caché sur grand écran */
+  font-size: 30px;
+  cursor: pointer;
+  color: black;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+/* Style des icônes */
+.hamburger .close-icon {
+  display: none; /* Icône croix cachée par défaut */
+}
 
 /* Responsive */
 @media screen and (max-width: 768px) {
+  .hamburger {
+    display: block; /* Affiché sur écran ≤ 768px */
+  }
+
   .menu {
     display: none;
     flex-direction: column;
     position: absolute;
     top: 70px;
-    right: 0; /* Place le menu à droite */
-    width: 250px; /* Ajuste la largeur selon ton design */
+    right: 0;
+    width: 250px;
     background: white;
-    text-align: left; /* Alignement du texte à gauche */
+    text-align: left;
     padding: 20px;
     box-shadow: -4px 4px 6px rgba(0, 0, 0, 0.1);
   }
@@ -121,10 +146,20 @@ nav {
     display: flex;
   }
 
+  /* Lorsque le menu est ouvert, montrer la croix et cacher le hamburger */
+  .menu-toggle:checked ~ .hamburger .open-icon {
+    display: none;
+  }
+  
+  .menu-toggle:checked ~ .hamburger .close-icon {
+    display: inline;
+  }
+
   .menu li {
-    padding: 15px;
+    padding: 15px 0;
   }
 }
+
 
 
 /* carousel */
@@ -551,48 +586,10 @@ nav {
   right: 10px;
 }
 
-/* Cacher le checkbox */
-.menu-toggle {
-  display: none;
-}
 
-/* Icône du menu hamburger */
-.hamburger {
-  display: none; /* Caché sur grand écran */
-  font-size: 30px;
-  cursor: pointer;
-  color: black;
-}
 
 /* Responsive */
-@media screen and (max-width: 768px) {
-  .hamburger {
-    display: block; /* Affiché sur écran ≤ 768px */
-  }
 
-  /* Cache le menu par défaut */
-  .menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background: white;
-    text-align: center;
-    padding: 20px 0;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  }
-
-  /* Afficher le menu lorsque le checkbox est coché */
-  .menu-toggle:checked ~ .menu {
-    display: flex;
-  }
-
-  .menu li {
-    padding: 15px 0;
-  }
-}
 
 
 /* A PROPOS */
