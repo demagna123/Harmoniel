@@ -27,6 +27,7 @@ nav {
 
 /* Conteneur de la navbar */
 .container {
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -194,15 +195,25 @@ nav {
   color: #fff;
   text-shadow: 0 5px 10px #0004;
 }
+.author-primary{
+
+  color: rgb(74, 74, 85);
+}
 .carousel .list .item .author {
   font-weight: bold;
   font-size: 1.5em;
   letter-spacing: 2px;
 }
+.des-primary{
+  color: rgb(74, 74, 85);
+}
 .carousel .list .item .des {
   font-size: 1.5em;
   font-weight: 300;
   line-height: 1.2em;
+}
+.title-primary{
+  color: rgb(74, 74, 85);
 }
 .carousel .list .item .title,
 .carousel .list .item .topic {
@@ -218,20 +229,36 @@ nav {
   display: grid;
   grid-template-columns: repeat(2, 130px);
   grid-template-rows: 40px;
-  gap: 5px;
+  gap: 40px;
   margin-top: 20px;
 }
 .carousel .list .item .buttons button {
-  background-color: transparent;
-  color: #eee;
-  border-color: #f1683a;
-  border-radius: 6px;
+  width: 150px;
+  height: 50px;
+  background-color: rgb(48, 48, 170);
+  color: #FFF;
+  border-color: none;
+  border-radius: 10px;
+  letter-spacing: 3px;
+  font-family: Poppins;
+  font-weight: 500;
+ 
+}
+.carousel .list .item .buttons button a{
+  color: #FFF;
+}
+.carousel .list .item .buttons .btn-plus {
+  background-color: rgb(74, 74, 85);
+  color: #FFF;
+  border-color: none;
+  border-radius: 10px;
   letter-spacing: 3px;
   font-family: Poppins;
   font-weight: 500;
 }
+
 .carousel .list .item .buttons button:nth-child(2) {
-  background-color: transparent;
+  background-color: rgb(74, 74, 85);
   border: 1px solid #fff;
   color: #eee;
   border-color: #eee;
@@ -285,12 +312,13 @@ nav {
 }
 .arrows button {
   margin-top: 50px;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  background-color: #eee4;
+  background-color:rgb(74, 74, 85);
   border: none;
   color: #fff;
+  font-size: 1.3rem;
   font-family: monospace;
   font-weight: bold;
   transition: 0.5s;
