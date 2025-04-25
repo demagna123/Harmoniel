@@ -1,4 +1,3 @@
-
 console.log("JS chargé !");
 let nextDom = document.getElementById("next");
 let prevDom = document.getElementById("prev");
@@ -37,6 +36,10 @@ function showSlider(type) {
     thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 1]);
     carouselDom.classList.add("prev");
   }
+  document.querySelectorAll(".carousel .list .item").forEach((item, index) => {
+    item.classList.remove("active");
+  });
+  document.querySelectorAll(".carousel .list .item")[0].classList.add("active");
 
   // Réinitialiser le délai d'animation
   clearTimeout(runTimeOut);
@@ -60,86 +63,3 @@ nextDom.onclick = function () {
 prevDom.onclick = function () {
   showSlider("prev");
 };
-
-
-//NOS PRODUITS CAROUSSEL
-document.addEventListener("DOMContentLoaded", function () {
-  const carousel = document.querySelector(".product-carousel");
-  const prevButton = document.getElementById("prev-product");
-  const nextButton = document.getElementById("next-product");
-  const productItems = document.querySelectorAll(".product-item");
-  let currentIndex = 0;
-  const itemsToShow = 3;
-
-  function updateCarousel() {
-    const offset = -currentIndex * (100 / itemsToShow);
-    carousel.style.transform = `translateX(${offset}%)`;
-  }
-
-  let autoScroll;
-
-  function startAutoScroll() {
-    autoScroll = setInterval(() => {
-      if (currentIndex < productItems.length - itemsToShow) {
-        currentIndex++;
-      } else {
-        currentIndex = 0;
-      }
-      updateCarousel();
-    }, 3000);
-  }
-
-  // Démarrer le défilement automatique
-  startAutoScroll();
-
-  nextButton.addEventListener("click", () => {
-    if (currentIndex < productItems.length - itemsToShow) {
-      currentIndex++;
-    } else {
-      currentIndex = 0;
-    }
-    updateCarousel();
-    resetAutoScroll();
-  });
-
-  prevButton.addEventListener("click", () => {
-    if (currentIndex > 0) {
-      currentIndex--;
-    } else {
-      currentIndex = productItems.length - itemsToShow;
-    }
-    updateCarousel();
-    resetAutoScroll();
-  });
-
-  function resetAutoScroll() {
-    clearInterval(autoScroll);
-    startAutoScroll();
-  }
-
-  // Mettre à jour le carrousel au chargement
-  updateCarousel();
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const hamburger = document.querySelector(".hamburger");
-  const menu = document.querySelector(".menu");
-
-  if (hamburger && menu) {
-    hamburger.addEventListener("click", function () {
-      menu.classList.toggle("active");
-    });
-
-    // Fermer le menu si on clique en dehors
-    document.addEventListener("click", function (event) {
-      if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
-        menu.classList.remove("active");
-      }
-    });
-  } else {
-    console.error("Hamburger ou menu non trouvé !");
-  }
-});
-
-
-

@@ -1,63 +1,65 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nos Produits - Prostyle</title>
+    <link rel="stylesheet" href="./css/produit.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nos Produits - Prostyle</title>
-  <link rel="stylesheet" href="./css/produit.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-</head>
-
-<body>
-  <!-- Header -->
-  <header>
-    <nav>
+  <body>
+    <header>
+      <nav>
         <div class="container">
-            <div class="logo">
-                <img src="./image/logo.png" alt="Logo">
-            </div>
+          <div class="logo">
+            <img src="./image/logo.png" alt="Logo" />
+          </div>
 
-            <!-- Checkbox cachée pour contrôler l'affichage du menu -->
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="hamburger">
-                <i class="fa-solid fa-bars open-icon"></i> <!-- Icône menu -->
-                <i class="fa-solid fa-xmark close-icon"></i> <!-- Icône croix -->
-            </label>
+          <!-- Checkbox cachée pour contrôler l'affichage du menu -->
+          <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+          <label for="menu-toggle" class="hamburger">
+            <i class="fa-solid fa-bars open-icon"></i>
+            <!-- Icône menu -->
+            <i class="fa-solid fa-xmark close-icon"></i>
+            <!-- Icône croix -->
+          </label>
 
-            <ul class="menu">
-                <li><a href="index.html" class="nav-link">Accueil</a></li>
-                <li><a href="index.html#produits" class="nav-link">Nos produits</a></li>
-                <li><a href="index.html#apropos" class="nav-link">À propos</a></li>
-                <li><a href="index.html#temoignage" class="nav-link">Témoignages</a></li>
-                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
-            </ul>
+          <ul class="menu">
+            <li><a href="index.html" class="nav-link">Accueil</a></li>
+            <li>
+              <a href="produits.html" class="nav-link active">Nos produits</a>
+            </li>
+            <li><a href="index.html#apropos" class="nav-link">À propos</a></li>
+            <li>
+              <a href="index.html#temoignage" class="nav-link">Témoignages</a>
+            </li>
+            <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            <li>
+              <a href="#" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+              </a>
+            </li>
+          </ul>
         </div>
-    </nav>
-</header>
-  <main>
-    <section class="liste-produits">
-      <!-- Produit 1 -->
-      <article class="produit">
-        <img src="./image/img17.jpg" alt="Blouse Médecin Classique" />
-        <h3>Blouse Médecin Classique</h3>
-        <p>Confortable et résistante, idéale pour les longues journées à l'hôpital.</p>
-        <span>4.5 €</span>
+      </nav>
+    </header>
 
-        <a href="https://wa.me/+22893532931?text=Bonjour%20je%20suis%20intéressé%20par%20la%20Blouse%20Médecin%20Classique"
-          target="_blank">
-          <button class="whatsapp-button">
-            <i class="fab fa-whatsapp"></i> Commander
-          </button>
-        </a>
-      </article>
+    <main>
+      <section class="product-hero">
+        <h1>Nos Blouses Professionnelles</h1>
+        <p>Découvrez notre collection de vêtements professionnels de qualité</p>
+      </section>
 
-      <!-- Produit 2 -->
-      <article class="produit">
-        <img src="./image/propos1.jpg" alt="Blouse Infirmier Pratique" />
-        <h3>Blouse Infirmier Pratique</h3>
-        <p>Pratique et facile à entretenir, parfaite pour les soins.</p>
-        <span>9.5 €</span>
+      <div class="product-filters">
+        <button class="filter-btn active">Tous</button>
+        <button class="filter-btn">Médecins</button>
+        <button class="filter-btn">Infirmiers</button>
+        <button class="filter-btn">Cuisiniers</button>
+      </div>
 
         <a href="https://wa.me/+22893532931?text=Bonjour%20je%20suis%20intéressé%20par%20la%20Blouse%20Infirmier%20Pratique"
           target="_blank">
@@ -288,44 +290,172 @@
           <form action="https://formspree.io/f/xyzewnbb" method="POST">
             <div class="form-group">
               <input type="text" name="name" id="name" placeholder="Votre nom" required />
+=======
+      <section class="liste-produits">
+        <!-- Produit 1 -->
+        <article class="produit" data-category="medecin">
+          <div class="product-badge">Nouveau</div>
+          <img src="./image/img17.jpg" alt="Blouse Médecin Classique" />
+          <h3>Blouse Médecin Classique</h3>
+          <p>
+            Confortable et résistante, idéale pour les longues journées à
+            l'hôpital.
+          </p>
+          <div class="product-footer">
+            <span class="price">4.5 €</span>
+            <div class="product-actions">
+              <button class="add-to-cart">
+                <i class="fas fa-cart-plus"></i>
+              </button>
+              <a
+                href="https://wa.me/+22893532931?text=Bonjour%20je%20suis%20intéressé%20par%20la%20Blouse%20Médecin%20Classique"
+                target="_blank"
+                class="whatsapp-button">
+                <i class="fab fa-whatsapp"></i> Commander
+              </a>
+>>>>>>> 345cc54 (modification du fichier index.html style.css script.css produit.html procuit.)
             </div>
-            <div class="form-group">
-              <input type="email" name="email" id="email" placeholder="Votre email" required />
+          </div>
+        </article>
+
+        <!-- Produit 2 -->
+        <article class="produit" data-category="infirmier">
+          <img src="./image/propos1.jpg" alt="Blouse Infirmier Pratique" />
+          <h3>Blouse Infirmier Pratique</h3>
+          <p>Pratique et facile à entretenir, parfaite pour les soins.</p>
+          <div class="product-footer">
+            <span class="price">9.5 €</span>
+            <div class="product-actions">
+              <button class="add-to-cart">
+                <i class="fas fa-cart-plus"></i>
+              </button>
+              <a
+                href="https://wa.me/+22893532931?text=Bonjour%20je%20suis%20intéressé%20par%20la%20Blouse%20Infirmier%20Pratique"
+                target="_blank"
+                class="whatsapp-button">
+                <i class="fab fa-whatsapp"></i> Commander
+              </a>
             </div>
-            <div class="form-group">
-              <textarea name="message" id="message" rows="5" placeholder="Votre message" required></textarea>
+          </div>
+        </article>
+
+        <!-- Produit 3 -->
+        <article class="produit" data-category="cuisinier">
+          <img src="./image/img5.jpg" alt="Blouse Cuisinier Robuste" />
+          <h3>Blouse Cuisinier Robuste</h3>
+          <p>Robuste et élégante, conçue pour les cuisines professionnelles.</p>
+          <div class="product-footer">
+            <span class="price">6.3 €</span>
+            <div class="product-actions">
+              <button class="add-to-cart">
+                <i class="fas fa-cart-plus"></i>
+              </button>
+              <a
+                href="https://wa.me/+22893532931?text=Bonjour%20je%20suis%20intéressé%20par%20la%20Blouse%20Cuisinier%20Robuste"
+                target="_blank"
+                class="whatsapp-button">
+                <i class="fab fa-whatsapp"></i> Commander
+              </a>
             </div>
-            <button type="submit" class="btn-submit">Envoyer</button>
-          </form>
+          </div>
+        </article>
+        <!-- Produit 4 -->
+        <article class="produit" data-category="cuisinier">
+          <img src="./image/img20.jpg" alt="Blouse Cuisinier Robuste" />
+          <h3>Blouse Cuisinier Robuste</h3>
+          <p>Robuste et élégante, conçue pour les cuisines professionnelles.</p>
+          <div class="product-footer">
+            <span class="price">6.3 €</span>
+            <div class="product-actions">
+              <button class="add-to-cart">
+                <i class="fas fa-cart-plus"></i>
+              </button>
+              <a
+                href="https://wa.me/+22893532931?text=Bonjour%20je%20suis%20intéressé%20par%20la%20Blouse%20Cuisinier%20Robuste"
+                target="_blank"
+                class="whatsapp-button">
+                <i class="fab fa-whatsapp"></i> Commander
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- ARTICLE 5 -->
+        <article class="produit" data-category="cuisinier">
+          <img src="./image/img11.jpg" alt="toge de soutenance" />
+          <h3>Toge de soutenance</h3>
+          <p>Robuste et élégante, conçue pour les soutenances.</p>
+          <div class="product-footer">
+            <span class="price">6.3 €</span>
+            <div class="product-actions">
+              <button class="add-to-cart">
+                <i class="fas fa-cart-plus"></i>
+              </button>
+              <a
+                href="https://wa.me/+22893532931?text=Bonjour%20je%20suis%20intéressé%20par%20la%20Blouse%20Cuisinier%20Robuste"
+                target="_blank"
+                class="whatsapp-button">
+                <i class="fab fa-whatsapp"></i> Commander
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ARTICLE 6 -->
+        <article class="produit" data-category="cuisinier">
+          <img src="./image/img12.jpg" alt="Blouse Cuisinier Robuste" />
+          <h3>Blouse Cuisinier Robuste</h3>
+          <p>Robuste et élégante, conçue pour les cuisines professionnelles.</p>
+          <div class="product-footer">
+            <span class="price">6.3 €</span>
+            <div class="product-actions">
+              <button class="add-to-cart">
+                <i class="fas fa-cart-plus"></i>
+              </button>
+              <a
+                href="https://wa.me/+22893532931?text=Bonjour%20je%20suis%20intéressé%20par%20la%20Blouse%20Cuisinier%20Robuste"
+                target="_blank"
+                class="whatsapp-button">
+                <i class="fab fa-whatsapp"></i> Commander
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- [Autres produits avec la même structure...] -->
+      </section>
+    </main>
+
+    <footer class="modern-footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./image/logo.png" alt="Prostyle Logo" />
+          <h3>Prostyle</h3>
+          <p>Vêtements professionnels d'exception</p>
         </div>
 
-        <!-- Informations de contact -->
-        <div class="contact-info">
-          <div class="info-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <p>Togo , Lomé</p>
-          </div>
-          <div class="info-item">
-            <i class="fas fa-phone"></i>
-            <p>+228 99 32 75 54</p>
-          </div>
-          <div class="info-item">
-            <i class="fas fa-envelope"></i>
-            <p>pro.style.tg@gmail.com</p>
-          </div>
+        <div class="footer-links">
+          <h4>Liens rapides</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="produits.html">Nos produits</a></li>
+            <li><a href="index.html#apropos">À propos</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
 
-          <!-- Réseaux sociaux -->
-          <div class="social-links">
-            <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><i class="fas fa-phone"></i> +228 99 32 75 54</p>
+          <p><i class="fas fa-envelope"></i> pro.style.tg@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> Lomé, Togo</p>
         </div>
       </div>
-    </div>
-  </section>
-  </main>
-</body>
 
+      <div class="footer-bottom">
+        <p>&copy; 2023 Prostyle. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <script src="./script/produit.js"></script>
+  </body>
 </html>
