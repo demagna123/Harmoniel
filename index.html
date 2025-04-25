@@ -1,391 +1,489 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prostyle</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prostyle</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-</head>
-
-<body>
-  <!-- Header -->
-  <header>
-    <nav>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav>
         <div class="container">
-            <div class="logo">
-                <img src="./image/logo.png" alt="Logo">
+          <div class="logo">
+            <img src="./image/logo.png" alt="Logo" />
+          </div>
+
+          <!-- Checkbox cachée pour contrôler l'affichage du menu -->
+          <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+          <label for="menu-toggle" class="hamburger">
+            <i class="fa-solid fa-bars open-icon"></i>
+            <!-- Icône menu -->
+            <i class="fa-solid fa-xmark close-icon"></i>
+            <!-- Icône croix -->
+          </label>
+
+          <ul class="menu">
+            <li><a href="index.html" class="nav-link">Accueil</a></li>
+            <li>
+              <a href="index.html#produits" class="nav-link">Nos produits</a>
+            </li>
+            <li><a href="index.html#apropos" class="nav-link">À propos</a></li>
+            <li>
+              <a href="index.html#temoignage" class="nav-link">Témoignages</a>
+            </li>
+            <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Carousel -->
+    <div class="carousel" id="acceuil">
+      <!-- List item -->
+      <div class="list">
+        <div class="item">
+          <img src="./image/bg1.jpg" alt="Slide 1" />
+          <div class="content">
+            <div class="author">Bienvenue sur Prostyle</div>
+            <div class="title">
+              Des blouses professionnelles pour tous les métiers !
             </div>
-
-            <!-- Checkbox cachée pour contrôler l'affichage du menu -->
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="hamburger">
-                <i class="fa-solid fa-bars open-icon"></i> <!-- Icône menu -->
-                <i class="fa-solid fa-xmark close-icon"></i> <!-- Icône croix -->
-            </label>
-
-            <ul class="menu">
-                <li><a href="index.html" class="nav-link">Accueil</a></li>
-                <li><a href="index.html#produits" class="nav-link">Nos produits</a></li>
-                <li><a href="index.html#apropos" class="nav-link">À propos</a></li>
-                <li><a href="index.html#temoignage" class="nav-link">Témoignages</a></li>
-                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
-
-
-
-
-
-
-
-
-  <!-- Carousel -->
-  <div class="carousel" id="acceuil">
-    <!-- List item -->
-    <div class="list">
-      <div class="item">
-        <img src="./image/img5.jpg" alt="Slide 1" />
-        <div class="content">
-          <div class="author">Bienvenue sur Prostyle</div>
-          <div class="title">Des blouses professionnelles pour tous les métiers !</div>
-          <div class="des">
-            Découvrez notre gamme de blouses pour médecins, infirmiers et cuisiniers.<br>
-            Confort, qualité et style au rendez-vous.
+            <div class="des">
+              Découvrez notre gamme de blouses pour médecins, infirmiers et
+              cuisiniers.<br />
+              Confort, qualité et style au rendez-vous.
+            </div>
+            <div class="buttons">
+              <button><a href="produit.html">Nos Produits</a></button>
+            </div>
           </div>
-          <div class="buttons">
-            <button><a href="produit.html">Nos Produits</a></button>
-            <button>En Savoir Plus</button>
+        </div> 
+        <div class="item">
+          <img src="./image/bg2.jpg" alt="Slide 2" />
+          <div class="content">
+            <div class="author">Bienvenue sur Prostyle</div>
+            <div class="title">Des blouses adaptées à vos besoins</div>
+            <div class="des">
+              Que vous soyez médecin, infirmier ou cuisinier, nous avons la
+              blouse qu'il vous faut.
+            </div>
+            <div class="buttons">
+              <button><a href="produit.html">Nos Produits</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./image/img22.jpg" alt="Slide 3" />
+          <div class="content">
+            <div class="author">Bienvenue sur Prostyle</div>
+            <div class="title">Qualité et durabilité</div>
+            <div class="des">
+              Nos blouses sont conçues pour résister aux exigences de votre
+              métier.
+            </div>
+            <div class="buttons">
+              <button><a href="produit.html">Nos Produits</a></button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="item">
-        <img src="./image/img21.jpg" alt="Slide 2" />
-        <div class="content">
-          <div class="author">Bienvenue sur Prostyle</div>
-          <div class="title">Des blouses adaptées à vos besoins</div>
-          <div class="des">
-            Que vous soyez médecin, infirmier ou cuisinier, nous avons la blouse qu'il vous faut.
+
+      <!-- Thumbnails -->
+      <div class="thumbnail">
+        <div class="item">
+          <img src="./image/img5.jpg" alt="Thumbnail 1" />
+          <div class="content">
+            <div class="title">Prostyle</div>
           </div>
-          <div class="buttons">
-            <button><a href="produit.html">Nos Produits</a></button>
-            <button>En Savoir Plus</button>
+        </div>
+        <div class="item">
+          <img src="./image/img21.jpg" alt="Thumbnail 2" />
+          <div class="content">
+            <div class="title">Prostyle</div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./image/img22.jpg" alt="Thumbnail 3" />
+          <div class="content">
+            <div class="title">Prostyle</div>
           </div>
         </div>
       </div>
-      <div class="item">
-        <img src="./image/img22.jpg" alt="Slide 3" />
-        <div class="content">
-          <div class="author">Bienvenue sur Prostyle</div>
-          <div class="title">Qualité et durabilité</div>
-          <div class="des">
-            Nos blouses sont conçues pour résister aux exigences de votre métier.
-          </div>
-          <div class="buttons">
-            <button><a href="produit.html">Nos Produits</a></button>
-            <button>En Savoir Plus</button>
-          </div>
-        </div>
+
+      <!-- Next and Previous Buttons -->
+      <div class="arrows">
+        <button id="prev">></button>
+        <button id="next">></button>
       </div>
+
+      <!-- Time Running -->
+      <div class="time"></div>
     </div>
 
-    <!-- Thumbnails -->
-    <div class="thumbnail">
-      <div class="item">
-        <img src="./image/img5.jpg" alt="Thumbnail 1" />
-        <div class="content">
-          <div class="title">Prostyle</div>
+    <!-- Section Nos Produits -->
+    <section class="nos-produits" id="produits">
+      <h2>Nos Produits</h2>
+      <p>Découvrez notre gamme de blouses professionnelles.</p>
+      <div class="products-grid">
+        <div class="product-row">
+          <div class="product-item">
+            <img src="./image/img7.jpg" alt="Blouse Médecin" />
+            <h3>Toge de soutenance</h3>
+            <p>Robuste et élégante pour les soutenances</p>
+            <button class="voir-plus">
+              <a href="produit.html">Voir Plus</a>
+            </button>
+          </div>
+          <div class="product-item">
+            <img src="./image/img5.jpg" alt="Blouse Infirmier" />
+            <h3>Blouse Infirmier</h3>
+            <p>Pratique et facile à entretenir, parfaite pour les soins.</p>
+            <button class="voir-plus">
+              <a href="produit.html">Voir Plus</a>
+            </button>
+          </div>
+          <div class="product-item">
+            <img src="./image/imgmedecin.jpg" alt="Blouse Cuisinier" />
+            <h3>Blouse médecin</h3>
+            <p>
+              Robuste et élégante, conçue pour les traitements professionnelles.
+            </p>
+            <button class="voir-plus">
+              <a href="produit.html">Voir Plus</a>
+            </button>
+          </div>
+        </div>
+        <div class="product-row">
+          <div class="product-item">
+            <img src="./image/img10.jpg" alt="Blouse Cuisinier" />
+            <h3>Blouse Cuisinier</h3>
+            <p>
+              Robuste et élégante, conçue pour les cuisines professionnelles.
+            </p>
+            <button class="voir-plus">
+              <a href="produit.html">Voir Plus</a>
+            </button>
+          </div>
+          <div class="product-item">
+            <img src="./image/img7.jpg" alt="Blouse Médecin" />
+            <h3>Toge de soutenance</h3>
+            <p>Robuste et élégante pour les soutenances</p>
+            <button class="voir-plus">
+              <a href="produit.html">Voir Plus</a>
+            </button>
+          </div>
+          <div class="product-item">
+            <img src="./image/img5.jpg" alt="Blouse Infirmier" />
+            <h3>Blouse Infirmier</h3>
+            <p>Pratique et facile à entretenir, parfaite pour les soins.</p>
+            <button class="voir-plus">
+              <a href="produit.html">Voir Plus</a>
+            </button>
+          </div>
+        </div>
+        <div class="voir-plus-container">
+          <a href="produit.html" class="voir-plus-btn">Voir plus de produits</a>
+        </div>
+
         </div>
       </div>
-      <div class="item">
-        <img src="./image/img21.jpg" alt="Thumbnail 2" />
-        <div class="content">
-          <div class="title">Prostyle</div>
+    </section>
+
+    <!-- Section À Propos -->
+    <section class="about-us" id="apropos">
+      <div class="about">
+        <div class="inner-section">
+          <h1>À Propos de Nous</h1>
+          <p class="text">
+            À propos de nous Chez ProStyle, nous concevons et fabriquons des
+            vêtements professionnels adaptés aux exigences des différents corps
+            de métier. Que vous soyez dans l'artisanat, l'industrie, la
+            restauration, la santé ou tout autre secteur nécessitant des tenues
+            spécifiques, nous mettons notre savoir-faire au service de votre
+            image institutionnelle. Notre mission est de proposer des vêtements
+            professionnels, élégant et de qualité, pour garantir à chaque
+            professionnel une tenue adaptée à son environnement de travail. Chez
+            ProStyle, chaque tenue est pensée pour refléter l'identité de votre
+            profession tout en alliant praticité et élégance. Nous offrons
+            également des options de personnalisation (logos, broderies,
+            couleurs spécifiques) pour renforcer l'image de marque de nos
+            clients. Faites confiance à notre expertise pour habiller vos
+            équipes avec des tenues professionnelles à la hauteur de leur
+            engagement. ProStyle, Votre image, notre savoir-faire !
+          </p>
         </div>
       </div>
-      <div class="item">
-        <img src="./image/img22.jpg" alt="Thumbnail 3" />
-        <div class="content">
-          <div class="title">Prostyle</div>
+    </section>
+
+    <!-- Section Témoignages -->
+    <section class="temoignage" id="temoignage">
+      <h2>Témoignages</h2>
+      <p class="sous-titre">Ce que nos clients disent de nous</p>
+      <div class="temoignage-container">
+        <!-- Témoignage 1 -->
+        <div class="temoignage-item">
+          <div class="client-info">
+            <img src="./image/tem1.jpg" alt="Client 1" class="client-photo" />
+            <div class="client-details">
+              <h3>Dr. Jean D.</h3>
+              <p>Médecin</p>
+            </div>
+          </div>
+          <div class="commentaire">
+            <p>
+              "Les blouses de Prostyle sont parfaites pour mes longues journées
+              à l'hôpital. Elles sont confortables et résistantes. Je recommande
+              !"
+            </p>
+
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Témoignage 2 -->
+        <div class="temoignage-item">
+          <div class="client-info">
+            <img src="./image/tem2.jpg" alt="Client 2" class="client-photo" />
+            <div class="client-details">
+              <h3>Infirmière Sophie L.</h3>
+              <p>Infirmière</p>
+            </div>
+          </div>
+          <div class="commentaire">
+            <p>
+              "J'adore les blouses de Prostyle. Elles sont pratiques, faciles à
+              laver et très stylées. Parfaites pour mon travail au quotidien."
+            </p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Témoignage 3 -->
+        <div class="temoignage-item">
+          <div class="client-info">
+            <img src="./image/tem3.jpg" alt="Client 3" class="client-photo" />
+            <div class="client-details">
+              <h3>Cheffe Julie M.</h3>
+              <p>Cuisinière</p>
+            </div>
+          </div>
+          <div class="commentaire">
+            <p>
+              "Les blouses Prostyle sont un véritable coup de cœur ! Leur
+              confort et leur qualité sont exceptionnels. Je les porte au
+              quotidien au travail, et elles sont non seulement pratiques, mais
+              aussi très élégantes. Je ne peux plus m'en passer !"
+            </p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Témoignage 4 -->
+        <div class="temoignage-item">
+          <div class="client-info">
+            <img src="./image/tem4.jpg" alt="Client 3" class="client-photo" />
+            <div class="client-details">
+              <h3>Chef Roland M.</h3>
+              <p>Cuisinier</p>
+            </div>
+          </div>
+          <div class="commentaire">
+            <p>
+              "Je suis ravie des blouses de Prostyle. Elles sont faciles à
+              entretenir et offrent une coupe moderne qui me permet de rester
+              élégante tout en étant à l'aise. Je les recommande vivement à
+              toutes celles qui recherchent à la fois style et praticité."
+            </p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Témoignage 5 -->
+        <div class="temoignage-item">
+          <div class="client-info">
+            <img src="./image/tem5.jpg" alt="Client 3" class="client-photo" />
+            <div class="client-details">
+              <h3>Chef Bernard M.</h3>
+              <p>Cuisinier</p>
+            </div>
+          </div>
+          <div class="commentaire">
+            <p>
+              "Les blouses de Prostyle sont robustes et élégantes. Elles
+              résistent parfaitement aux rigueurs de la cuisine
+              professionnelle."
+            </p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Témoignage 6-->
+        <div class="temoignage-item">
+          <div class="client-info">
+            <img src="./image/tem6.jpg" alt="Client 3" class="client-photo" />
+            <div class="client-details">
+              <h3>Chef Nestor M.</h3>
+              <p>Cuisinier</p>
+            </div>
+          </div>
+          <div class="commentaire">
+            <p>
+              "Depuis que j'ai découvert les blouses Prostyle, mon quotidien au
+              travail a changé. Elles sont parfaites pour allier confort et
+              professionnalisme. La qualité du tissu est vraiment
+              impressionnante et elles gardent leur forme même après plusieurs
+              lavages."
+            </p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Next and Previous Buttons -->
-    <div class="arrows">
-      <button id="prev"> </button>
-      <button id="next">></button>
-    </div>
-
-    <!-- Time Running -->
-    <div class="time"></div>
-  </div>
-
-  <!-- Section Nos Produits -->
-  <section class="nos-produits" id="produits">
-    <h2>Nos Produits</h2>
-    <p>Découvrez notre gamme de blouses professionnelles.</p>
-    <div class="carousel-container">
-      <button id="prev-product" class="carousel-arrow"><i class="fa-solid fa-arrow-left"></i></button>
-      <div class="product-carousel">
-        <div class="product-item">
-          <img src="./image/img7.jpg" alt="Blouse Médecin" />
-          <h3>Toge de soutenance</h3>
-          <p>Robuste et élégante pour les soutenances</p>
-          <button class="voir-plus"><a href="produit.html">Voir Plus</a></button>
-        </div>
-        <div class="product-item">
-          <img src="./image/img5.jpg" alt="Blouse Infirmier" />
-          <h3>Blouse Infirmier</h3>
-          <p>Pratique et facile à entretenir, parfaite pour les soins.</p>
-          <button class="voir-plus"><a href="produit.html">Voir Plus</a></button>
-        </div>
-        <div class="product-item">
-          <img src="./image/imgmedecin.jpg" alt="Blouse Cuisinier" />
-          <h3>Blouse médecin</h3>
-          <p>Robuste et élégante, conçue pour les traitements professionnelles.</p>
-          <button class="voir-plus"><a href="produit.html">Voir Plus</a></button>
-        </div>
-        <div class="product-item">
-          <img src="./image/img10.jpg" alt="Blouse Cuisinier" />
-          <h3>Blouse Cuisinier</h3>
-          <p>Robuste et élégante, conçue pour les cuisines professionnelles.</p>
-          <button class="voir-plus"><a href="produit.html">Voir Plus</a></button>
-        </div>
-      </div>
-      <button id="next-product" class="carousel-arrow"><i class="fa-solid fa-arrow-right"></i></button>
-    </div>
-  </section>
-
-  <!-- Section À Propos -->
-  <section class="about-us" id="apropos">
-    <div class="about">
-      <div class="inner-section">
-        <h1>À Propos de Nous</h1>
-        <p class="text">
-          À propos de nous
-
-          Chez ProStyle, nous concevons et fabriquons des vêtements professionnels adaptés aux exigences des différents corps de métier.
-          
-           Que vous soyez dans l’artisanat, l’industrie, la restauration, la santé ou tout autre secteur nécessitant des tenues spécifiques, nous mettons notre savoir-faire au service de votre image institutionnelle.  
-          
-          Notre mission est de proposer des vêtements professionnels, élégant et de qualité, pour garantir à chaque professionnel une tenue adaptée à son environnement de travail.
-          
-           
-          
-          Chez ProStyle, chaque tenue est pensée pour refléter l’identité de votre profession tout en alliant praticité et élégance. Nous offrons également des options de personnalisation (logos, broderies, couleurs spécifiques) pour renforcer l’image de marque de nos clients.  
-          
-          Faites confiance à notre expertise pour habiller vos équipes avec des tenues professionnelles à la hauteur de leur engagement.
-          
-          ProStyle, 
-          Votre image, notre savoir-faire !
+    <!-- Section Contact -->
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <h2>Contactez-nous</h2>
+        <p class="sous-titre">
+          Une question ? Un projet ? Écrivez-nous et nous vous répondrons
+          rapidement.
         </p>
-        <div class="skills">
-          <button><a href="lire.html">Lire Plus</a></button>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Section Témoignages -->
-  <section class="temoignage" id="temoignage">
-    <h2>Témoignages</h2>
-    <p class="sous-titre">Ce que nos clients disent de nous</p>
-    <div class="temoignage-container">
-      <!-- Témoignage 1 -->
-      <div class="temoignage-item">
-        <div class="client-info">
-          <img src="./image/tem1.jpg" alt="Client 1" class="client-photo" />
-          <div class="client-details">
-            <h3>Dr. Jean D.</h3>
-            <p>Médecin</p>
-          </div>
-        </div>
-        <div class="commentaire">
-          <p>
-            "Les blouses de Prostyle sont parfaites pour mes longues journées à l'hôpital. 
-            Elles sont confortables et résistantes. Je recommande !"
-          </p>
-
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-        </div>
-      </div>
-
-      <!-- Témoignage 2 -->
-      <div class="temoignage-item">
-        <div class="client-info">
-          <img src="./image/tem2.jpg" alt="Client 2" class="client-photo" />
-          <div class="client-details">
-            <h3>Infirmière Sophie L.</h3>
-            <p>Infirmière</p>
-          </div>
-        </div>
-        <div class="commentaire">
-          <p>
-            "J'adore les blouses de Prostyle. Elles sont pratiques, faciles à laver et très stylées. 
-            Parfaites pour mon travail au quotidien."
-          </p>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-          </div>
-        </div>
-      </div>
-
-      <!-- Témoignage 3 -->
-      <div class="temoignage-item">
-        <div class="client-info">
-          <img src="./image/tem3.jpg" alt="Client 3" class="client-photo" />
-          <div class="client-details">
-            <h3>Cheffe Julie M.</h3>
-            <p>Cuisinière</p>
-          </div>
-        </div>
-        <div class="commentaire">
-          <p> "Les blouses Prostyle sont un véritable coup de cœur ! Leur confort et leur qualité sont exceptionnels. Je les porte au quotidien au travail, et elles sont non seulement pratiques, mais aussi très élégantes. Je ne peux plus m'en passer !" </p>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-        </div>
-      </div>
-
-      <!-- Témoignage 4 -->
-      <div class="temoignage-item">
-        <div class="client-info">
-          <img src="./image/tem4.jpg" alt="Client 3" class="client-photo" />
-          <div class="client-details">
-            <h3>Chef Roland M.</h3>
-            <p>Cuisinier</p>
-          </div>
-        </div>
-        <div class="commentaire">
-          <p> "Je suis ravie des blouses de Prostyle. Elles sont faciles à entretenir et offrent une coupe moderne qui me permet de rester élégante tout en étant à l'aise. Je les recommande vivement à toutes celles qui recherchent à la fois style et praticité." </p>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-        </div>
-      </div>
-
-      <!-- Témoignage 5 -->
-      <div class="temoignage-item">
-        <div class="client-info">
-          <img src="./image/tem5.jpg" alt="Client 3" class="client-photo" />
-          <div class="client-details">
-            <h3>Chef Bernard M.</h3>
-            <p>Cuisinier</p>
-          </div>
-        </div>
-        <div class="commentaire">
-          <p>
-            "Les blouses de Prostyle sont robustes et élégantes. 
-            Elles résistent parfaitement aux rigueurs de la cuisine professionnelle."
-          </p>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-        </div>
-      </div>
-
-      <!-- Témoignage 6-->
-      <div class="temoignage-item">
-        <div class="client-info">
-          <img src="./image/tem6.jpg" alt="Client 3" class="client-photo" />
-          <div class="client-details">
-            <h3>Chef Nestor M.</h3>
-            <p>Cuisinier</p>
-          </div>
-        </div>
-        <div class="commentaire">
-          <p> "Depuis que j'ai découvert les blouses Prostyle, mon quotidien au travail a changé. Elles sont parfaites pour allier confort et professionnalisme. La qualité du tissu est vraiment impressionnante et elles gardent leur forme même après plusieurs lavages." </p>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Contact -->
-  <section class="contact" id="contact">
-    <div class="contact-container">
-      <h2>Contactez-nous</h2>
-      <p class="sous-titre">Nous sommes à votre écoute pour toute question ou demande.</p>
-
-      <div class="contact-content">
-        <!-- Formulaire de contact -->
         <div class="contact-form">
           <form action="https://formspree.io/f/xyzewnbb" method="POST">
             <div class="form-group">
-              <input type="text" name="name" id="name" placeholder="Votre nom" required />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Votre nom complet"
+                required />
             </div>
             <div class="form-group">
-              <input type="email" name="email" id="email" placeholder="Votre email" required />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Votre email"
+                required />
             </div>
             <div class="form-group">
-              <textarea name="message" id="message" rows="5" placeholder="Votre message" required></textarea>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Votre téléphone (optionnel)" />
             </div>
-            <button type="submit" class="btn-submit">Envoyer</button>
+            <div class="form-group">
+              <textarea
+                name="message"
+                id="message"
+                rows="5"
+                placeholder="Votre message"
+                required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Envoyer le message</button>
           </form>
         </div>
+      </div>
+    </section>
+    <footer class="modern-footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./image/logo.png" alt="Prostyle Logo" />
+          <h3>Prostyle</h3>
+          <p>Vêtements professionnels d'exception</p>
+        </div>
 
-        <!-- Informations de contact -->
-        <div class="contact-info">
-          <div class="info-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <p>Togo, Lomé</p>
-          </div>
-          <div class="info-item">
-            <i class="fas fa-phone"></i>
-            <p>+228 99 32 75 54</p>
-          </div>
-          <div class="info-item">
-            <i class="fas fa-envelope"></i>
-            <p>pro.style.tg@gmail.com</p>
-          </div>
-
-          <!-- Réseaux sociaux -->
+        <div class="footer-social">
+          <h4>Suivez-nous</h4>
           <div class="social-links">
-            <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" target="_blank" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" target="_blank" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
           </div>
         </div>
+
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Abonnez-vous pour recevoir nos offres exclusives</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Votre email" required />
+            <button type="submit">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
       </div>
-    </div>
-  </section>
 
-  <script src="script.js"></script>
-</body>
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">Conditions générales</a>
+          <a href="#">Contact</a>
+        </div>
+        <p class="copyright">&copy; 2023 Prostyle. Tous droits réservés.</p>
+      </div>
+    </footer>
 
+    <script src="script.js"></script>
+  </body>
 </html>
-
