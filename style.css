@@ -37,7 +37,6 @@ header {
   z-index: 1000;
 }
 .container {
-
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -198,10 +197,6 @@ nav {
   text-shadow: 0 5px 10px #0004;
   z-index: 1;
 }
-.author-primary{
-
-  color: rgb(74, 74, 85);
-}
 .carousel .list .item .author {
   font-weight: bold;
   font-size: 1.5em;
@@ -265,8 +260,6 @@ nav {
 }
 
 .carousel .list .item .buttons button:nth-child(2) {
-  background-color: rgb(74, 74, 85);
-  border: 1px solid #fff;
   background-color: transparent;
   border: 1px solid var(--white);
   color: #eee;
@@ -326,10 +319,6 @@ nav {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color:rgb(74, 74, 85);
-  border: none;
-  color: #fff;
-  font-size: 1.3rem;
   background-color: rgba(238, 238, 238, 0.4);
   border: none;
   color: var(--white);
