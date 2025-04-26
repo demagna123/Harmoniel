@@ -202,23 +202,29 @@ nav {
   font-size: 1.5em;
   letter-spacing: 2px;
 }
-.des-primary{
-  color: rgb(74, 74, 85);
-}
 .carousel .list .item .des {
   font-size: 1.5em;
   font-weight: 300;
   line-height: 1.2em;
 }
-.title-primary{
-  color: rgb(74, 74, 85);
-}
 .carousel .list .item .title,
 .carousel .list .item .topic {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: bold;
   line-height: 1.5em;
   margin: 10px 0;
+}
+.carousel .list .item .content .author{
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 2em;
+  color: var(--white);
+}
+.carousel .list .item .content .des{
+  font-size: 1.5em;
+  font-weight: 500;
+  line-height: 2em;
+  color: var(--text-color);
 }
 .carousel .list .item .topic {
   color: var(--primary-color);
@@ -227,44 +233,30 @@ nav {
   display: grid;
   grid-template-columns: repeat(2, 130px);
   grid-template-rows: 40px;
-  gap: 40px;
+  gap: 5px;
   margin-top: 20px;
 }
 .carousel .list .item .buttons button {
-  width: 150px;
-  height: 50px;
-  background-color: #151588;
-  color: #FFF;
-  border-color: none;
-  border-radius: 10px;
-  letter-spacing: 3px;
-  font-family: Poppins;
-  font-weight: 500;
- 
-}
-.carousel .list .item .buttons button a{
-  color: #FFF;
-}
-.carousel .list .item .buttons .btn-plus {
-  background-color: rgb(74, 74, 85);
-  color: #FFF;
-  border-color: none;
-  border-radius: 10px;
-  background-color: transparent;
+  background-color: var(--primary-color);
   color: #eee;
-  border-color: var(--primary-color);
+  border: none;
   border-radius: 6px;
   letter-spacing: 3px;
   font-family: Poppins;
   font-weight: 500;
 }
-
 .carousel .list .item .buttons button:nth-child(2) {
   background-color: transparent;
   border: 1px solid var(--white);
   color: #eee;
   border-color: #eee;
 }
+ .buttons button a{
+  color: var(--white);
+  text-decoration: none;
+  font-family: Poppins;
+  font-weight: 500;
+ }
 
 /* thumbail */
 .thumbnail {
@@ -316,8 +308,8 @@ nav {
 }
 .arrows button {
   margin-top: 50px;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: rgba(238, 238, 238, 0.4);
   border: none;
@@ -490,15 +482,21 @@ nav {
 
 /* NOS PRODUITS */
 .nos-produits {
-  text-align: center;
-  padding: 20px;
-  margin: 10% 0;
+  /* text-align: center; */
+  /* padding: 20px; */
+  /* margin: 10% 0; */
+  /* background-color: var(--light-color); */
+
+  padding: 50px 20px;
   background-color: var(--light-color);
+  text-align: center;
 }
 .nos-produits h2 {
-  font-size: 4em;
-  margin-bottom: 50px;
-  font-weight: 900;
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: var(--secondary-color);
+  font-family: "Dancing Script", cursive;
+
 }
 .nos-produits p {
   margin-bottom: 40px;
@@ -613,8 +611,8 @@ nav {
 
 /* A PROPOS */
 .about-us {
-  margin: 10% 0;
   background-color: var(--light-color);
+  padding: 50px 20px;
 }
 
 .about {
@@ -692,10 +690,10 @@ nav {
 
 /* TEMOIGNAGE */
 .temoignage {
-  padding: 80px 20px;
+  padding: 50px 20px;
   background-color: var(--light-color);
   text-align: center;
-  margin: 10% 0;
+  /* margin: 10% 0; */
 }
 
 .temoignage h2 {
@@ -791,7 +789,7 @@ nav {
 
 /* Section Contact */
 .contact {
-  padding: 80px 20px;
+  padding: 50px 20px;
   background-color: var(--light-color);
   text-align: center;
 }
